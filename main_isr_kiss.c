@@ -8,15 +8,17 @@ char g_str[10];
 void btn_callback(void) {
   if (g_cnt >= 8)
     g_cnt = 0;
+
+  g_cnt = 2;
 }
 
 void main(void) {
-  // ...
   
-
+  
+  
   while (1) {
-    g_cnt = 2;
-
+    printf("btn pressed \n");
+    
     int i = 0;
     for (i = 0; i < g_cnt; i++) {
       g_str = 1;
